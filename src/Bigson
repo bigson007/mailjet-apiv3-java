@@ -1,0 +1,9 @@
+curl -X POST \
+ https://api.mailjet.com/v4/sms-send \
+ -H “Authorization: Bearer $MJ_e510cc8b77e94d66bec9ed4fa874f27f” \
+ -H ‘Content-Type: application/json’ \
+ -d ‘{
+ “Text”: “Your order #257H937 placed with Vidaloka has been processed for shipment.”,
+ “To”: “+2348100033986”,
+ “From”: “Bigson”
+ }’
